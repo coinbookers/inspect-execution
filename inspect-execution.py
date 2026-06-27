@@ -171,4 +171,19 @@ def main():
     )
 
     print(
-        "Execut
+        "Execution complete"
+    )
+
+
+if __name__ == "__main__":
+    try:
+        main()
+    except KeyboardInterrupt:
+        print("Interrupted")
+    except Exception as error:
+        print(
+            "Runtime error:",
+            error
+        )
+
+print("Finished")
